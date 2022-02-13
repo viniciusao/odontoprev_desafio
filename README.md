@@ -1,8 +1,17 @@
-# odontoprev_desafio
+## odontoprev_desafio
 Desafio técnico Arquiteto de soluções.
 
+### Requisitos
+1. *Python versão maior ou igual a **3.8***.
+2. *Linux*.
 
-## TODO
+### Usage
+
+1. *git clone <este_repo> && cd <este_repo_dir>*
+2. *./setup_hml.sh*
+
+
+### TODO
 
 - **Componentes**:
     * [x] *Schemas*
