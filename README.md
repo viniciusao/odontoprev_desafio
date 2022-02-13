@@ -9,3 +9,6 @@ Desafio técnico Arquiteto de soluções.
         * [x] Compartilhado
         * [x] Beneficiário
         * [x] Dentista
+  
+    * [ ] *CLI*
+        * [ ] Create database and table
