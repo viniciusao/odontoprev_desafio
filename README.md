@@ -21,8 +21,8 @@ Desafio técnico Arquiteto de soluções.
         * [x] Motor de regras
     
     * [x] *Helpers*
-    * [ ] *Chalice views*
-        * [ ] beneficiários
-        * [ ] dentistas
-        * [ ] eventos
-        * [ ] guias
+    * [x] *Chalice views*
+        * [x] beneficiários
+        * [x] dentistas
+        * [x] eventos
+        * [x] guias
