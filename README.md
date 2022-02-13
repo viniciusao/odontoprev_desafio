@@ -19,3 +19,5 @@ Desafio técnico Arquiteto de soluções.
     * [x] *Interfaces*
         * [x] Cursor (*Banco de dados*)
         * [x] Motor de regras
+    
+    * [ ] *Helpers*
