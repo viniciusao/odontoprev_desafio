@@ -10,7 +10,7 @@ from marshmallow import (
 )
 
 
-class SharedEndpointsRequirements(Schema):
+class EndpointsRequisitosCompartilhados(Schema):
     """
     Alguns schemas definidos pelos endpoints da aplicação
     possuem algumas propriedades e descrições idênticas,

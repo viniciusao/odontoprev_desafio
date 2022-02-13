@@ -1,6 +1,6 @@
 from marshmallow import fields, validate
 
-from .compartilhado import SharedEndpointsRequirements
+from .compartilhado import EndpointsRequisitosCompartilhados
 
 
 class DentistasReqs:
@@ -25,7 +25,7 @@ class DentistasReqs:
     """
 
 
-class CadastroDentista(SharedEndpointsRequirements):
+class CadastroDentista(EndpointsRequisitosCompartilhados):
 
     cro = fields.Str(
         validate=[
