@@ -16,6 +16,8 @@ Desafio técnico Arquiteto de soluções.
     * [x] *Middlewares*
         * [x] Simular sistemas distribuídos (`requests`)
     
-    * [ ] *Interfaces*
-        * [ ] Cursor (*Banco de dados*)
-        * [ ] Motor de regras
+    * [x] *Interfaces*
+        * [x] Cursor (*Banco de dados*)
+        * [x] Motor de regras
+    
+    * [ ] *Helpers*
