@@ -5,7 +5,7 @@ Desafio técnico Arquiteto de soluções.
 ## TODO
 
 - **Componentes**:
-    * [ ] *Schemas*
-        * [ ] Compartilhado
-        * [ ] Beneficiário
-        * [ ] Dentista
+    * [x] *Schemas*
+        * [x] Compartilhado
+        * [x] Beneficiário
+        * [x] Dentista
