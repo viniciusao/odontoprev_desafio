@@ -1,9 +1,28 @@
 {
   "version": "2.0",
-  "app_name": "oie",
+  "app_name": "guias_tratamentos_odontologicos",
   "stages": {
     "dev": {
-      "api_gateway_stage": "api"
+      "api_gateway_stage": "api",
+      "environment_variables": {
+        "DATABASE_FILE": "guias_tratamentos_odontologicos.db",
+        "SERVER": "http://localhost:8000",
+        "TABLE_BENEFICIARIOS": "beneficiarios",
+        "TABLE_DENTISTAS": "dentistas",
+        "TABLE_EVENTOS": "eventos",
+        "TABLE_GUIAS": "guias"
+      }
+    },
+    "hml": {
+      "api_gateway_stage": "api",
+      "environment_variables": {
+        "DATABASE_FILE": "guias_tratamentos_odontologicos.db",
+        "SERVER": "http://localhost:8000",
+        "TABLE_BENEFICIARIOS": "beneficiarios",
+        "TABLE_DENTISTAS": "dentistas",
+        "TABLE_EVENTOS": "eventos",
+        "TABLE_GUIAS": "guias"
+      }
     }
   }
 }
