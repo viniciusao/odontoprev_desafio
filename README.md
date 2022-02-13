@@ -10,5 +10,5 @@ Desafio técnico Arquiteto de soluções.
         * [x] Beneficiário
         * [x] Dentista
   
-    * [ ] *CLI*
-        * [ ] Criar banco de dados e tabelas
+    * [x] *CLI*
+        * [x] Criar banco de dados e tabelas
