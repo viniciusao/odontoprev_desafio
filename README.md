@@ -12,3 +12,6 @@ Desafio técnico Arquiteto de soluções.
   
     * [x] *CLI*
         * [x] Criar banco de dados e tabelas
+
+    * [ ] *Middlewares*
+        * [ ] Simular sistemas distribuídos (`requests`)
