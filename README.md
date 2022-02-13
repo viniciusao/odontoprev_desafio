@@ -11,4 +11,4 @@ Desafio técnico Arquiteto de soluções.
         * [x] Dentista
   
     * [ ] *CLI*
-        * [ ] Create database and table
+        * [ ] Criar banco de dados e tabelas
