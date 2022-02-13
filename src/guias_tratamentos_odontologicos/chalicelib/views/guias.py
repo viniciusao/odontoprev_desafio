@@ -59,7 +59,6 @@ def check_regras_de_negocios(event, get_response):
         data_execucao = body.get('data_execucao')
         cursor = SqliteOps(db=os.environ['DATABASE_FILE']).cursor
         if regras.eventos_por_periodicidade(evento, beneficiario, data_execucao, cursor):
-            print('ahiu')
             return Response(
                 body={'error': 'data de execução não disponível.'},
                 status_code=400
