@@ -9,6 +9,7 @@ Desafio técnico Arquiteto de soluções.
 
 1. *git clone <este_repo> && cd <este_repo_dir>*
 2. *./setup_hml.sh*
+3. Postman collections _<'odontoprev(...)collection.json>_ no repositório.
 
 ### Rationale
 * **Assunções**:
