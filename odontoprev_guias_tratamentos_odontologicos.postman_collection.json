@@ -1,0 +1,436 @@
+{
+	"info": {
+		"_postman_id": "9e415c06-9805-4c43-9407-432517acd06f",
+		"name": "odontoprev_guias_tratamentos_odontologicos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "beneficiarios",
+			"item": [
+				{
+					"name": "todos beneficiários",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/beneficiarios",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"beneficiarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "somente um beneficiário",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/beneficiarios?carteirinha=1111122",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"beneficiarios"
+							],
+							"query": [
+								{
+									"key": "carteirinha",
+									"value": "1111122"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrar beneficiário",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"teste teste\",\n    \"carteirinha\": 1111122,\n    \"email\": \"testesteste@gmail.com\",\n    \"data_nascimento\": \"10/05/1996\",\n    \"genero\": \"Masculino\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/beneficiarios",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"beneficiarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "dentistas",
+			"item": [
+				{
+					"name": "todos dentistas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/dentistas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"dentistas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "somente um dentista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/dentistas?cro=1231233-RR",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"dentistas"
+							],
+							"query": [
+								{
+									"key": "cro",
+									"value": "1231233-RR"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrar dentista",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"teste dentista\",\n    \"cro\": \"1231233-RR\",\n    \"endereco\": \"rua teste, bairro teste\",\n    \"especialidades\": [\"Cirurgia\", \"Implante\"],\n    \"genero\": \"Feminino\",\n    \"email\": \"teste@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/dentistas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"dentistas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "eventos",
+			"item": [
+				{
+					"name": "todos eventos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/eventos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"eventos"
+							]
+						},
+						"description": "desafio arquiteto de soluções."
+					},
+					"response": []
+				},
+				{
+					"name": "somente um evento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/eventos?codigo=85400076",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"eventos"
+							],
+							"query": [
+								{
+									"key": "codigo",
+									"value": "85400076"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrar evento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"codigo\": 85400076,\n    \"descricao\": \"teste\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/eventos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"eventos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "guias",
+			"item": [
+				{
+					"name": "todas guias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/guias",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"guias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "somente uma guia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/guias?numero=1231233",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"guias"
+							],
+							"query": [
+								{
+									"key": "numero",
+									"value": "1231233"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrar guia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numero\": 1231233,\n    \"beneficiario\": 1111122,\n    \"dentista\": \"123123-RR\",\n    \"data_atendimento\": \"14/02/2022T04:50:02\",\n    \"data_execucao\": \"20/02/2022\",\n    \"evento\": 85400076,\n    \"face\": \"por dente\",\n    \"local\": \"5 – 51, 52, 53, 54, 55 e 56\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/guias",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"guias"
+							]
+						},
+						"description": "Para testar o `motor_regra: periodicidade`, deve-se cadastrar uma guia primeiro.\nQuanto a `motor_regra: eventos`, deve-se cadastrar o evento `85400416`"
+					},
+					"response": [
+						{
+							"name": "motor_regra: periodicidade",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"numero\": 1231233,\n    \"beneficiario\": 1111122,\n    \"dentista\": \"123123-RR\",\n    \"data_atendimento\": \"14/02/2022T04:50:02\",\n    \"data_execucao\": \"20/02/2022\",\n    \"evento\": 85400076,\n    \"face\": \"por dente\",\n    \"local\": \"5 – 51, 52, 53, 54, 55 e 56\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/guias",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"guias"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "motor_regra: eventos",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"numero\": 1231233,\n    \"beneficiario\": 1111122,\n    \"dentista\": \"123123-RR\",\n    \"data_atendimento\": \"14/02/2022T04:50:02\",\n    \"data_execucao\": \"20/02/2022\",\n    \"evento\": 85400416,\n    \"face\": \"por dente\",\n    \"local\": \"5 – 51, 52, 53, 54, 55 e 56\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/guias",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"guias"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
